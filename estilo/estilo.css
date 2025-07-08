@@ -1,0 +1,58 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: rgb(139, 128, 128);
+  
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+    border-radius: 8px;
+    gap: 4px;
+    box-shadow: 5px 5px 8px rgba(0,0,0, 0.336);
+    background-color: yellow;
+    height: fit-content;
+}
+h2{
+    text-align: center;
+    border-bottom-style: solid;
+    border-color: darkblue;
+}
+#botao{
+    margin: 15px 0px;
+    background-color: black;
+    color: aliceblue;
+}
+#botao:hover{
+    color:black;
+    background-color: aliceblue;
+}
+
+input{
+    padding-left: 5px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    border-color: black;
+}
+
+#sms{
+
+    visibility: visible;
+    transition: 10ms;
+    
+}
+
