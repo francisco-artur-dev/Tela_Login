@@ -2,36 +2,33 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envio de formulario</title>
-    <link rel="stylesheet" href="estilo/estilo.css">
+    <title>Envio de Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    
 </head>
 <body>
 
-<div class="containner">
-  
-        <form  name="formulario" translate="yes" method="get" action="/html/resp.html" onsubmit="">
+    <div class="container">
+        <form name="formulario" method="get" action="html/resp.html" onsubmit="return validaCampos();">
             <h2>Login</h2>
-                        
-                <label for="email">G-mail</label>
-               <input type="email" name="nome" id="email" placeholder="digite o seu email">
 
-            <label for="password">Password</label>
-               <input type="password" name="password" id="senha" placeholder="digite a sua password">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+              <small id="valiEmail"></small>
 
-         
-             <!-- <input type="submit" value="login"  class="but"> --> 
-             <input type="button" id="botao" value="Login" onclick="validaCampos()">
-             
-        
-          <p id="sms" > </p>
-      </form>
-   
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                <small id="validaSenha"></small>
 
-   
-</div>
+            <input type="submit" value="Login"  class="but" >
+                <small id="sms"></small>
+            
 
-   <script src="/script/app.js"></script> 
+        </form>
+    </div>
+
+    <script src="script/app.js"></script>
 </body>
 </html>
